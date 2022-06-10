@@ -4,7 +4,6 @@
 # daemon.
 
 ARG BUILD_VERSION
-
 FROM mcr.microsoft.com/windows/nanoserver:${BUILD_VERSION}
 RUN mkdir C:\tmp && mkdir C:\bin
 ADD https://frippery.org/files/busybox/busybox64.exe /bin/busybox.exe
